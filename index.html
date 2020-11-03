@@ -15,9 +15,20 @@
       name: '',
       repo: '',
       loadSidebar:true, //enable sidebar
+      autoHeader:true, //根据siderbar内容自动增加标题
       loadNavbar:true, //enable navbar
-      // subMaxLevel: 2, //设置最大层级
-    }
+      mergeNavbar:true, //小屏下合并navbar到sidebar
+      subMaxLevel: 2, //设置最大层级
+      maxLevel:4, //设置最大标题层级
+      auto2top:true, //auto to top
+      name:'<span>Wild Stories</span>', //title
+      // themeColor:'636940', //replace theme colour
+      formatUpdated:'{MM}/{DD} {HH}:{mm}',
+      formatUpdated: function(time){
+      	//...
+      	return time;
+      },
+    };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
