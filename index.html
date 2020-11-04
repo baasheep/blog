@@ -26,14 +26,14 @@
       auto2top:true, //auto to top
       externalLinkTarget:'_blank', //外部链接新标签页打开
       externalLinkRel:'', //防止新打开的外部页面能够控制我们的页面
-
+      ga:'G-03G5V7D2WV', //add google analytics
       //scripts
       formatUpdated:'{MM}/{DD} {HH}:{mm}',
       formatUpdated: function(time){
       	//...
       	return time;
       }, //显示文档更新日期
-      //全文搜索
+
       search:{
       	maxAge:86400000, //过期时间，单位ms，默认1天
       	path:[], //or 'auto'
@@ -41,9 +41,7 @@
       	noData:"没有找到结果，换个关键词试试？",
       	depth:2, //搜索标题最大层级1-6
       	hideOtherSidebarContent: false, //是否隐藏其他侧边栏内容
-      }
-      //add google analytics
-      ga:'G-03G5V7D2WV',
+      },//全文搜索
 }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
