@@ -26,7 +26,13 @@
       auto2top:true, //auto to top
       externalLinkTarget:'_blank', //外部链接新标签页打开
       externalLinkRel:'', //防止新打开的外部页面能够控制我们的页面
-      ga:'G-03G5V7D2WV', //add google analytics
+      // ga:'G-03G5V7D2WV', //add google analytics
+      count:{
+      	countable:true,
+      	fontsize:'0.9em',
+      	color:'#da7564',
+      	language:'chinese',
+      },
       //scripts
       formatUpdated:'{MM}/{DD} {HH}:{mm}',
       formatUpdated: function(time){
@@ -47,7 +53,15 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <!-- add search plugin -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- google analytic -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script> -->
+  <!-- add emoji support -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- zoom image -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- add click to copy for codes -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 </body>
 </html>
